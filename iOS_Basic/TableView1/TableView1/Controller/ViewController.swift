@@ -1,14 +1,24 @@
-# TableView 1
+//
+//  ViewController.swift
+//  TableView1
+//
+//  Created by jake on 2019/1/22.
+//  Copyright © 2019年 Jake. All rights reserved.
+//
 
-目標：製作一個基本的Table View
+import UIKit
 
-## 圖示
+class ViewController: UIViewController {
+    
+    //View
+    @IBOutlet weak var tableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+}
 
-<img src="TableView1.png" width="300">
-
-## 程式碼
-
-```swift
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -39,6 +49,3 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         print(indexPath.row)
     }
 }
-```
-
-
