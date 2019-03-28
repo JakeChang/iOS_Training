@@ -6,7 +6,7 @@ iOS的訓練課程
 
 - swift程式語言篇
 
-	1. [常數與變數](https://github.com/JakeChang/iOS_Training/tree/develop/swift/swift1) 
+	1. [常數與變數](https://github.com/JakeChang/iOS_Training/blob/develop/swift/swift1.md) 
 
 - iOS基礎UI篇
 	
