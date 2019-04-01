@@ -14,21 +14,20 @@
 ```swift
 //開啟向左滑
 func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-	return true
+    return true
 }
     
 //開啟向左滑，按下事件
 func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-	print(indexPath.row)
+    print(indexPath.row)
 }
     
 func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-	let contextualAction = UIContextualAction(style: .normal, title: nil, handler: { (action, view, completionHandler) in
-		completionHandler(true)
-            
-	})
-	contextualAction.image = UIImage(named: "edit")
-        
+    let contextualAction = UIContextualAction(style: .normal, title: nil, handler: { (action, view, completionHandler) in
+    completionHandler(true)
+    })
+    contextualAction.image = UIImage(named: "edit")
+    
     return UISwipeActionsConfiguration(actions: [contextualAction])
 }
 ```
