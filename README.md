@@ -8,7 +8,7 @@ iOS的訓練課程
 
 	1. [常數與變數](https://github.com/JakeChang/iOS_Training/blob/develop/swift/swift1.md) 
 
-	2. [Codable 解析 JSON](https://github.com/JakeChang/iOS_Training/blob/develop/swift/Codable/Codable.md) 
+	2. [Codable 解析 JSON](https://github.com/JakeChang/iOS_Training/blob/develop/swift/Codable/) 
 
 - iOS基礎UI篇
 	
