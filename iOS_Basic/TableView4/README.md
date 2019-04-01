@@ -1,12 +1,14 @@
-# TableView 1
+# TableView 4
 
-目標：製作基本的TableView
+目標：製作可以手滑拖曳排序TableView
 
 ## 圖示
 
 <img src="photo1.png" width="300">
 
-## 程式碼
+## 步驟
+
+實作TableView的dataSource與delegate：
 
 ```swift
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
@@ -38,7 +40,20 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         
         print(indexPath.row)
     }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return UITableViewCell.EditingStyle.none
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        print(sourceIndexPath.row, destinationIndexPath.row)
+    }
 }
 ```
 
+將tableView的editing設定為true，即可開啟排序功能
+
+```swift
+tableView.setEditing(true, animated: true)
+```
 

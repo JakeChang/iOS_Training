@@ -1,12 +1,22 @@
-# TableView 1
+# TableView 2
 
-目標：製作基本的TableView
+目標：製作客製化Cell的TableView
 
 ## 圖示
 
 <img src="photo1.png" width="300">
 
-## 程式碼
+## 步驟
+
+新增一個 ```UITableViewCell```
+
+註冊Cell：
+
+```swift
+tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+```
+
+實作TableView的dataSource與delegate：
 
 ```swift
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
@@ -23,14 +33,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         
-        cell?.textLabel?.text = String(indexPath.row)
-        
-        return cell!
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -41,4 +46,5 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
 }
 ```
 
+在Storyboard上連結TableView的dataSource與delegate
 

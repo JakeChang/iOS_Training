@@ -1,14 +1,33 @@
-# TableView 1
+//
+//  ViewController.swift
+//  TableView4
+//
+//  Created by jake on 2019/1/24.
+//  Copyright © 2019年 Jake. All rights reserved.
+//
 
-目標：製作基本的TableView
+import UIKit
 
-## 圖示
+class ViewController: UIViewController {
+    
+    //View
+    @IBOutlet weak var tableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func clickButton(_ sender: Any) {
+        if tableView.isEditing {
+            tableView.setEditing(false, animated: true)
+        }
+        else {
+            tableView.setEditing(true, animated: true)
+        }
+    }
+    
+}
 
-<img src="photo1.png" width="300">
-
-## 程式碼
-
-```swift
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -38,7 +57,12 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         
         print(indexPath.row)
     }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return UITableViewCell.EditingStyle.none
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        print(sourceIndexPath.row, destinationIndexPath.row)
+    }
 }
-```
-
-

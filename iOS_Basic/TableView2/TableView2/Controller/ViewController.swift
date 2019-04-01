@@ -1,14 +1,25 @@
-# TableView 1
+//
+//  ViewController.swift
+//  TableView2
+//
+//  Created by jake on 2019/1/22.
+//  Copyright © 2019年 Jake. All rights reserved.
+//
 
-目標：製作基本的TableView
+import UIKit
 
-## 圖示
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+    }
+    
+}
 
-<img src="photo1.png" width="300">
-
-## 程式碼
-
-```swift
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -23,14 +34,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         
-        cell?.textLabel?.text = String(indexPath.row)
-        
-        return cell!
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -39,6 +45,3 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         print(indexPath.row)
     }
 }
-```
-
-
