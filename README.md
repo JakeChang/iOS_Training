@@ -10,6 +10,14 @@
 
 	- [Codable 解析 JSON](https://github.com/JakeChang/iOS_Training/blob/develop/swift/Codable/) 
 
+- iOS系統篇
+
+	- [MemoryLeak 1](https://github.com/JakeChang/iOS_Training/tree/develop/iOS_Basic/MemoryLeak1)：討論在custom table cell delegate中產生的memory leak
+
+	- [MemoryLeak 2](https://github.com/JakeChang/iOS_Training/tree/develop/iOS_Basic/MemoryLeak2)：討論在closure中產生的memory leak
+
+	- [DispatchSourceTimer](https://github.com/JakeChang/iOS_Training/blob/develop/swift/Timer/)：製作可以在背景執行的Timer
+
 - iOS基礎UI篇
 	
 	- [Table View 1](https://github.com/JakeChang/iOS_Training/tree/develop/iOS_Basic/TableView1)：製作基本的TableView
@@ -31,7 +39,7 @@
 	- [Collection View 4](https://github.com/JakeChang/iOS_Training/tree/develop/iOS_Basic/CollectionView4)：製作可以拖曳排序的CollectionView，使用Drag與Drop實作
 	
 	- [Collection View 5](https://github.com/JakeChang/iOS_Training/tree/develop/iOS_Basic/CollectionView5)：製作CollectionView，使用UICollectionViewFlowLayout實作
-	
+		
 - iOS其它控制
 
 
