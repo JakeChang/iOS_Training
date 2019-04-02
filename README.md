@@ -22,7 +22,16 @@
 
 	- [Table View 5](https://github.com/JakeChang/iOS_Training/tree/develop/iOS_Basic/TableView5)：製作可以左右滑動Cell的TableView
 
+	- [Collection View 1](https://github.com/JakeChang/iOS_Training/tree/develop/iOS_Basic/CollectionView1)：製作基本的CollectionView
 
+	- [Collection View 2](https://github.com/JakeChang/iOS_Training/tree/develop/iOS_Basic/CollectionView2)：製作含有Header的CollectionView
+
+	- [Collection View 3](https://github.com/JakeChang/iOS_Training/tree/develop/iOS_Basic/CollectionView3)：製作可以拖曳排序的CollectionView
+
+	- [Collection View 4](https://github.com/JakeChang/iOS_Training/tree/develop/iOS_Basic/CollectionView4)：製作可以拖曳排序的CollectionView，使用Drag與Drop實作
+	
+	- [Collection View 5](https://github.com/JakeChang/iOS_Training/tree/develop/iOS_Basic/CollectionView5)：製作CollectionView，使用UICollectionViewFlowLayout實作
+	
 - iOS其它控制
 
 
