@@ -67,4 +67,4 @@
 
 - watchOS
 
-	- [Transition 5](https://github.com/JakeChang/iOS_Training/tree/develop/watchOS/WorkoutSession)：在Watch上實現運動流程
+	- [WorkoutSession](https://github.com/JakeChang/iOS_Training/tree/develop/watchOS/WorkoutSession)：在Watch上實現運動流程
