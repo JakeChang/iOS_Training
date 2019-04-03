@@ -64,3 +64,7 @@
 	- [Transition 4](https://github.com/JakeChang/iOS_Training/tree/develop/iOS_Transition/Transition4)：換頁時的轉場動畫
 
 	- [Transition 5](https://github.com/JakeChang/iOS_Training/tree/develop/iOS_Transition/Transition5)：換頁時的轉場動畫
+
+- watchOS
+
+	- [Transition 5](https://github.com/JakeChang/iOS_Training/tree/develop/watchOS/WorkoutSession)：在Watch上實現運動流程

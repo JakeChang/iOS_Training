@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WorkoutSession_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="開始" id="Jui-jQ-mlZ">
+                            <connections>
+                                <action selector="clickButton" destination="AgC-eL-Hgc" id="l6V-Su-BS0"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="停止" id="2Cw-58-ZZC">
+                            <connections>
+                                <action selector="clickStopButton" destination="AgC-eL-Hgc" id="9if-qa-cER"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
